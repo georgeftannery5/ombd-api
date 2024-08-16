@@ -7,9 +7,9 @@
 /* NAVIGATION */
 
 .nav{
-    padding: 60px;
+    padding: 70px;
     height: 80px;
-    background-image: linear-gradient(#da411b, #fff);
+    background-image: linear-gradient(#fff, #da411b);
 }
 
 
@@ -21,11 +21,16 @@
     justify-content: space-between;
 }
 
+.nav__logo{
+    width: 60px;
+    border-radius: 50%;
+}
 
 /* SEARCH */
 
+
 .search__container{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,28 +39,40 @@
 
 
 .search__row{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .search__header{
-    font-size: 52px;
+    font-size: 48px;
     padding-bottom: 12px;
+}
+
+.search{
+    border-radius: 34px;
+    padding: 16px;
+    background-color: lightgray;
+    border: 1px solid black;
 }
 
 .search__bar{
     font-size: 28px;
-    border-radius: 34px;
-    padding: 16px;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+}
 
+.fas{
+    font-size: 24px;
 }
 
 
 .datenight{
     padding: 16px 0;
     height: 50vh;
+    z-index: -1;
 }
 
 /* MOVIES */
