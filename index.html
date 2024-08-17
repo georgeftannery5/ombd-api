@@ -16,8 +16,20 @@
             <div class="nav__bar">
                 <img class="nav__logo" src="./assets/logo.png">
                 <h3>FilmClick</h3>
-                <a href="#">Home</a>
-                <a href="#">Films</a>
+                <a class="nav__links" href="#">Home</a>
+                <a class="nav__links" href="#">Films</a>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()" >Home</a></li>
+                        <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Films</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -53,7 +65,6 @@
             </div>
         </div>
     </section>
-
 
 <footer class="footer">
     <div class="footer__container">
